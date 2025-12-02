@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { usersData } from '../data/users';
+import { fetchUsers } from '../api/api';
 
 const STORAGE_KEY_TOKEN_LOGIN = 'biblioteca_auth_token';
 
@@ -17,7 +17,6 @@ export const useAuth = () => {
         setIsAuthenticated(true);
       } catch (error) {
         localStorage.removeItem(STORAGE_KEY_TOKEN_LOGIN);
-        console.log(error);
       }
     }
     setLoading(false);
@@ -25,9 +24,9 @@ export const useAuth = () => {
 
   const login = async (email, password) => {
     try {
-      await new Promise(resolve => setTimeout(resolve, 500)); // Simulación de retraso de petición.
-
-      const foundUser = usersData.find(
+      const users = await fetchUsers();
+      
+      const foundUser = users.find(
         u => u.email === email && u.password === password
       );
 
@@ -62,7 +61,7 @@ export const useAuth = () => {
         message: 'Login exitoso',
       };
     } catch (error) {
-      console.log(error);
+      console.error('Login error:', error);
       return {
         success: false,
         message: 'Error en el servidor',

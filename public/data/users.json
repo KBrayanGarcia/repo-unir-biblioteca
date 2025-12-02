@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "email": "admin@biblioteca.com",
+    "password": "admin123",
+    "nombre": "Administrador"
+  },
+  {
+    "id": 2,
+    "email": "usuario@test.com",
+    "password": "test123",
+    "nombre": "Usuario de Prueba"
+  }
+]
