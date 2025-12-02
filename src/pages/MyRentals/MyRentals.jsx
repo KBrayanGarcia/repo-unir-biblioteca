@@ -5,6 +5,7 @@ import StatusBadge from '../../components/StatusBadge/StatusBadge';
 import RentalButton from '../../components/RentalButton/RentalButton';
 import { DEFAULT_BOOK_IMAGE } from '../../constants';
 import './MyRentals.css';
+import { Link } from 'react-router-dom';
 
 const MyRentals = () => {
   const { user } = useAuth();
@@ -42,9 +43,9 @@ const MyRentals = () => {
         <h1 className="my-rentals__title">Mis Préstamos</h1>
         <div className="my-rentals__empty">
           <p className="my-rentals__empty-text">No tienes libros alquilados actualmente</p>
-          <a href="/catalogo" className="my-rentals__empty-link">
+          <Link to="/catalogo" className="my-rentals__empty-link">
             Explorar catálogo
-          </a>
+          </Link>
         </div>
       </div>
     );
