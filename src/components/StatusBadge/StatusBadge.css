@@ -1,0 +1,19 @@
+.status-badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge--disponible {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.status-badge--alquilado {
+  background: var(--color-warning-light);
+  color: var(--color-warning);
+}

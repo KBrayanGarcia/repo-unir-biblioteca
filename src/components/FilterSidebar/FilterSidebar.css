@@ -1,0 +1,86 @@
+.filter-sidebar {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 100px;
+  border: 1px solid var(--color-gray-100);
+}
+
+.filter-sidebar__title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-gray-100);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-sidebar__options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-sidebar__option {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--color-gray-600);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.filter-sidebar__option:hover {
+  background: var(--color-gray-50);
+  color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+.filter-sidebar__option--active {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  font-weight: 600;
+  box-shadow: 0 4px 6px -1px rgba(0, 61, 165, 0.2);
+}
+
+.filter-sidebar__option--active:hover {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: var(--color-white);
+  transform: translateX(4px);
+}
+
+.filter-sidebar__option--active::after {
+  content: '→';
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .filter-sidebar {
+    position: static;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-sidebar__options {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .filter-sidebar__option {
+    white-space: nowrap;
+    width: auto;
+  }
+}

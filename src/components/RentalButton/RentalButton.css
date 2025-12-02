@@ -1,0 +1,39 @@
+.rental-button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  text-align: center;
+}
+
+.rental-button:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.rental-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.rental-button:disabled {
+  background: var(--color-gray-300);
+  color: var(--color-gray-600);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.rental-button--return {
+  background: var(--color-secondary);
+}
+
+.rental-button--return:hover:not(:disabled) {
+  background: var(--color-secondary-light);
+}

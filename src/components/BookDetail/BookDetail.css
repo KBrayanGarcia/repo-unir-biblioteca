@@ -1,0 +1,131 @@
+.book-detail {
+  padding: 2rem 0;
+}
+
+.book-detail--not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.book-detail__container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-detail__cover {
+  position: relative;
+}
+
+.book-detail__image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.book-detail__status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.book-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.book-detail__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.book-detail__author {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: 600;
+  margin: 0;
+}
+
+.book-detail__metadata {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f7fafc;
+  border-radius: 12px;
+}
+
+.book-detail__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.book-detail__meta-label {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.book-detail__meta-value {
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.book-detail__synopsis {
+  padding: 1.5rem;
+  background: #fff;
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.book-detail__synopsis-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 1rem 0;
+}
+
+.book-detail__synopsis-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin: 0;
+}
+
+.book-detail__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 968px) {
+  .book-detail__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .book-detail__cover {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .book-detail__title {
+    font-size: 2rem;
+  }
+
+  .book-detail__metadata {
+    grid-template-columns: 1fr;
+  }
+}

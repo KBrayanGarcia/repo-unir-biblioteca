@@ -1,0 +1,39 @@
+.catalog {
+  padding: 2rem 0;
+}
+
+.catalog__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.catalog__content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.catalog__books {
+  min-width: 0;
+}
+
+.catalog__results {
+  font-size: 1rem;
+  color: #718096;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+@media (max-width: 968px) {
+  .catalog__content {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog__title {
+    font-size: 2rem;
+  }
+}

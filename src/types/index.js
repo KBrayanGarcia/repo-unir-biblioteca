@@ -1,0 +1,4 @@
+export const BOOK_STATUS = {
+  DISPONIBLE: 'DISPONIBLE',
+  ALQUILADO: 'ALQUILADO',
+};
