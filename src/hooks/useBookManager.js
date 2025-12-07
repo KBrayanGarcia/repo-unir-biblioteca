@@ -2,7 +2,6 @@ import { useBookStorage } from './useBookStorage';
 import { useBookOperations } from './useBookOperations';
 import { BOOK_STATUS } from '../types';
 
-// Orchestrator hook
 export const useBookManager = () => {
   const { books, loading, saveBooks } = useBookStorage();
   const { alquilarLibro, devolverLibro, extenderPlazo } = useBookOperations(books, saveBooks);
