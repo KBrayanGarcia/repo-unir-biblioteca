@@ -9,7 +9,27 @@
     "sinopsis": "La obra maestra de Gabriel García Márquez narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo.",
     "categoria": "Realismo Mágico",
     "estado": "DISPONIBLE",
-    "fecha_devolucion": null
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Ana García",
+        "puntuacion": 5,
+        "comentario": "Una obra maestra absoluta. La narrativa de García Márquez es hipnotizante y la historia de los Buendía se queda contigo para siempre.",
+        "fecha": "2025-11-15"
+      },
+      {
+        "usuario": "Carlos Mendoza",
+        "puntuacion": 5,
+        "comentario": "El realismo mágico en su máxima expresión. Cada página es poesía pura.",
+        "fecha": "2025-10-22"
+      },
+      {
+        "usuario": "María López",
+        "puntuacion": 4,
+        "comentario": "Magnífico pero denso. Requiere concentración pero vale totalmente la pena.",
+        "fecha": "2025-09-08"
+      }
+    ]
   },
   {
     "id": 2,
@@ -21,7 +41,21 @@
     "sinopsis": "Las aventuras de un hidalgo pobre que, de tanto leer novelas de caballería, enloquece y decide convertirse en caballero andante.",
     "categoria": "Clásico",
     "estado": "ALQUILADO",
-    "fecha_devolucion": "2025-12-05"
+    "fecha_devolucion": "2025-12-05",
+    "criticas": [
+      {
+        "usuario": "Pedro Sánchez",
+        "puntuacion": 5,
+        "comentario": "La obra cumbre de la literatura española. Divertida, profunda y atemporal.",
+        "fecha": "2025-11-20"
+      },
+      {
+        "usuario": "Laura Martín",
+        "puntuacion": 4,
+        "comentario": "Un clásico imprescindible, aunque la lectura puede resultar lenta al principio.",
+        "fecha": "2025-10-15"
+      }
+    ]
   },
   {
     "id": 3,
@@ -33,7 +67,27 @@
     "sinopsis": "Una distopía que presenta un futuro totalitario donde el Gran Hermano controla cada aspecto de la vida y la verdad histórica.",
     "categoria": "Ciencia Ficción",
     "estado": "DISPONIBLE",
-    "fecha_devolucion": null
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Javier Ruiz",
+        "puntuacion": 5,
+        "comentario": "Perturbadoramente relevante hoy en día. Una lectura obligatoria.",
+        "fecha": "2025-11-28"
+      },
+      {
+        "usuario": "Isabel Torres",
+        "puntuacion": 5,
+        "comentario": "Escalofriante y brillante. Orwell fue un visionario.",
+        "fecha": "2025-11-10"
+      },
+      {
+        "usuario": "Miguel Ángel",
+        "puntuacion": 4,
+        "comentario": "Excelente distopía, aunque algo deprimente. Muy recomendable.",
+        "fecha": "2025-10-05"
+      }
+    ]
   },
   {
     "id": 4,
@@ -45,7 +99,21 @@
     "sinopsis": "Un cuento poético sobre un pequeño príncipe que viaja de planeta en planeta aprendiendo sobre el amor y la amistad.",
     "categoria": "Infantil",
     "estado": "DISPONIBLE",
-    "fecha_devolucion": null
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Sofía Ramírez",
+        "puntuacion": 5,
+        "comentario": "Un libro hermoso que todos deberíamos leer, sin importar la edad. Profundo y conmovedor.",
+        "fecha": "2025-11-25"
+      },
+      {
+        "usuario": "Roberto Díaz",
+        "puntuacion": 5,
+        "comentario": "Cada vez que lo releo descubro nuevas lecciones. Simplemente perfecto.",
+        "fecha": "2025-10-18"
+      }
+    ]
   },
   {
     "id": 5,
@@ -57,7 +125,21 @@
     "sinopsis": "La historia de Elizabeth Bennet y su relación con el rico y orgulloso Mr. Darcy. Una crítica social y romance clásico.",
     "categoria": "Romance",
     "estado": "DISPONIBLE",
-    "fecha_devolucion": null
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Elena Vargas",
+        "puntuacion": 5,
+        "comentario": "El mejor romance clásico jamás escrito. Los personajes son increíblemente bien desarrollados.",
+        "fecha": "2025-11-18"
+      },
+      {
+        "usuario": "Francisco Molina",
+        "puntuacion": 4,
+        "comentario": "Brillante crítica social envuelta en una historia romántica cautivadora.",
+        "fecha": "2025-10-30"
+      }
+    ]
   },
   {
     "id": 6,
@@ -129,7 +211,27 @@
     "sinopsis": "Un manual de estilo de desarrollo ágil de software. Lectura obligatoria para cualquier desarrollador que quiera escribir código profesional.",
     "categoria": "Tecnología",
     "estado": "DISPONIBLE",
-    "fecha_devolucion": null
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Raúl Navarro",
+        "puntuacion": 5,
+        "comentario": "Imprescindible para cualquier desarrollador. Me hizo replantear mi forma de programar.",
+        "fecha": "2025-11-17"
+      },
+      {
+        "usuario": "Beatriz Castro",
+        "puntuacion": 5,
+        "comentario": "Los principios enseñados aquí mejoraron drásticamente la calidad de mi código.",
+        "fecha": "2025-10-20"
+      },
+      {
+        "usuario": "Tomás Vega",
+        "puntuacion": 4,
+        "comentario": "Excelente contenido, aunque algunos ejemplos en Java pueden parecer anticuados.",
+        "fecha": "2025-09-15"
+      }
+    ]
   },
   {
     "id": 12,
@@ -153,7 +255,27 @@
     "sinopsis": "En el planeta desértico Arrakis, Paul Atreides debe liderar una rebelión para recuperar el control sobre la especia, la sustancia más valiosa del universo.",
     "categoria": "Ciencia Ficción",
     "estado": "DISPONIBLE",
-    "fecha_devolucion": null
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "David Castro",
+        "puntuacion": 5,
+        "comentario": "La mejor obra de ciencia ficción jamás escrita. Compleja, fascinante y visionaria.",
+        "fecha": "2025-11-22"
+      },
+      {
+        "usuario": "Patricia Jiménez",
+        "puntuacion": 5,
+        "comentario": "Un universo increíblemente detallado. La profundidad política y ecológica es impresionante.",
+        "fecha": "2025-11-05"
+      },
+      {
+        "usuario": "Alberto Fernández",
+        "puntuacion": 4,
+        "comentario": "Obra maestra, aunque requiere paciencia para sumergirse en su mundo complejo.",
+        "fecha": "2025-10-12"
+      }
+    ]
   },
   {
     "id": 14,
@@ -165,7 +287,27 @@
     "sinopsis": "Un niño huérfano descubre que es un mago y entra en la escuela de magia Hogwarts, donde comienza su leyenda.",
     "categoria": "Fantasía",
     "estado": "ALQUILADO",
-    "fecha_devolucion": "2025-12-15"
+    "fecha_devolucion": "2025-12-15",
+    "criticas": [
+      {
+        "usuario": "Carmen Herrera",
+        "puntuacion": 5,
+        "comentario": "Mágico en todos los sentidos. Un inicio perfecto para una saga inolvidable.",
+        "fecha": "2025-11-30"
+      },
+      {
+        "usuario": "Daniel Ortiz",
+        "puntuacion": 5,
+        "comentario": "Me enamoré del mundo mágico desde la primera página. Para todas las edades.",
+        "fecha": "2025-11-12"
+      },
+      {
+        "usuario": "Natalia Romero",
+        "puntuacion": 5,
+        "comentario": "Una aventura maravillosa que despierta la imaginación. Simplemente genial.",
+        "fecha": "2025-10-28"
+      }
+    ]
   },
   {
     "id": 15,
@@ -201,7 +343,21 @@
     "sinopsis": "Santiago, un joven pastor andaluz, viaja desde su tierra natal hacia el desierto egipcio en busca de un tesoro oculto en las pirámides.",
     "categoria": "Aventura",
     "estado": "ALQUILADO",
-    "fecha_devolucion": "2025-11-25"
+    "fecha_devolucion": "2025-11-25",
+    "criticas": [
+      {
+        "usuario": "Marta Delgado",
+        "puntuacion": 5,
+        "comentario": "Un libro inspirador sobre seguir tus sueños. Me cambió la perspectiva de vida.",
+        "fecha": "2025-11-08"
+      },
+      {
+        "usuario": "Andrés Gómez",
+        "puntuacion": 4,
+        "comentario": "Hermoso y motivador, aunque a veces algo simple en su filosofía.",
+        "fecha": "2025-10-25"
+      }
+    ]
   },
   {
     "id": 18,

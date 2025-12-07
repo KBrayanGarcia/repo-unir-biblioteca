@@ -17,6 +17,13 @@ const BookDetail = () => {
   const book = getLibroById(Number(id));
   const [imgError, setImgError] = useState(false);
 
+  const reviews = book?.criticas ?? [];
+  const averageRating = reviews.length > 0
+    ? (reviews.reduce((sum, review) => sum + review.puntuacion, 0) / reviews.length).toFixed(1)
+    : null;
+
+  const sortedReviews = [...reviews].sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
   if (!book) {
     return (
       <div className="book-detail book-detail--not-found">
@@ -96,6 +103,45 @@ const BookDetail = () => {
                 estado={book.estado}
                 onClick={handleRental}
               />
+            )}
+          </div>
+
+          {/* Sección de Críticas */}
+          <div className="book-detail__reviews">
+            <div className="book-detail__reviews-header">
+              <h3 className="book-detail__reviews-title">Críticas de lectores</h3>
+              {averageRating && (
+                <div className="book-detail__rating">
+                  <span className="book-detail__rating-value">{averageRating}</span>
+                  <span className="book-detail__rating-stars">{'⭐'.repeat(Math.round(averageRating))}</span>
+                  <span className="book-detail__rating-count">({reviews.length} {reviews.length === 1 ? 'crítica' : 'críticas'})</span>
+                </div>
+              )}
+            </div>
+
+            {reviews.length === 0 ? (
+              <p className="book-detail__no-reviews">Sin críticas disponibles</p>
+            ) : (
+              <div className="book-detail__reviews-list">
+                {sortedReviews.map((review, index) => (
+                  <div key={index} className="book-detail__review-item">
+                    <div className="book-detail__review-header">
+                      <span className="book-detail__review-user">{review.usuario}</span>
+                      <span className="book-detail__review-rating">
+                        {'⭐'.repeat(review.puntuacion)}
+                      </span>
+                    </div>
+                    <p className="book-detail__review-comment">{review.comentario}</p>
+                    <span className="book-detail__review-date">
+                      {new Date(review.fecha).toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </span>
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         </div>

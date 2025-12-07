@@ -11,6 +11,11 @@ const BookCard = ({ book }) => {
     setImgError(true);
   };
 
+  const reviews = book.criticas ?? [];
+  const averageRating = reviews.length > 0
+    ? (reviews.reduce((sum, review) => sum + review.puntuacion, 0) / reviews.length).toFixed(1)
+    : null;
+
   return (
     <Link to={`/libro/${book.id}`} className="book-card">
       <div className="book-card__image-container">
@@ -27,6 +32,13 @@ const BookCard = ({ book }) => {
       <div className="book-card__content">
         <h3 className="book-card__title">{book.titulo}</h3>
         <p className="book-card__author">{book.autor}</p>
+        {averageRating && (
+          <div className="book-card__rating">
+            <span className="book-card__rating-value">{averageRating}</span>
+            <span className="book-card__rating-stars">⭐</span>
+            <span className="book-card__rating-count">({reviews.length})</span>
+          </div>
+        )}
         <div className="book-card__meta">
           <span className="book-card__category">{book.categoria}</span>
           <span className="book-card__year">{book.anio_publicacion}</span>

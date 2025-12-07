@@ -74,6 +74,28 @@
   font-weight: 500;
 }
 
+.book-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.875rem;
+}
+
+.book-card__rating-value {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.book-card__rating-stars {
+  font-size: 0.9rem;
+}
+
+.book-card__rating-count {
+  color: var(--color-gray-600);
+  font-size: 0.8rem;
+}
+
 .book-card__meta {
   display: flex;
   justify-content: space-between;
