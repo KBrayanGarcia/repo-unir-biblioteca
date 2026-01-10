@@ -49,6 +49,22 @@
   transform: translateX(4px);
 }
 
+.filter-sidebar__option-count {
+  font-size: 0.85rem;
+  background: var(--color-gray-100);
+  color: var(--color-gray-500);
+  padding: 0.1rem 0.6rem;
+  border-radius: 20px;
+  min-width: 2rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.filter-sidebar__option--active .filter-sidebar__option-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
 .filter-sidebar__option--active {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-white);

@@ -2,9 +2,10 @@ import React from 'react';
 import './FilterSidebar.css';
 
 const FilterSidebar = ({
-  categorias,
+  categorias = [],
   categoriaSeleccionada,
   onCategoriaChange,
+  totalLibros,
 }) => {
   return (
     <aside className="filter-sidebar">
@@ -19,19 +20,25 @@ const FilterSidebar = ({
             }`}
             onClick={() => onCategoriaChange('')}
           >
-            Todas
+            <span className="filter-sidebar__option-name">Todas</span>
+            {totalLibros !== undefined && (
+              <span className="filter-sidebar__option-count">({totalLibros})</span>
+            )}
           </button>
           {categorias.map((categoria) => (
             <button
-              key={categoria}
+              key={categoria.name}
               className={`filter-sidebar__option ${
-                categoriaSeleccionada === categoria
+                categoriaSeleccionada === categoria.name
                   ? 'filter-sidebar__option--active'
                   : ''
               }`}
-              onClick={() => onCategoriaChange(categoria)}
+              onClick={() => onCategoriaChange(categoria.name)}
             >
-              {categoria}
+              <span className="filter-sidebar__option-name">{categoria.name}</span>
+              {categoria.count !== null && (
+                <span className="filter-sidebar__option-count">({categoria.count})</span>
+              )}
             </button>
           ))}
         </div>

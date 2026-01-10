@@ -18,19 +18,23 @@ const MyRentals = () => {
     setImgErrors(prev => ({ ...prev, [bookId]: true }));
   };
 
-  const handleReturn = (bookId) => {
+  const handleReturn = async (bookId) => {
     if (user) {
-      const success = devolverLibro(bookId, user.id);
+      const success = await devolverLibro(bookId, user.id);
       if (!success) {
         alert('No se pudo devolver el libro. Verifica que sea tuyo.');
       }
     }
   };
 
-  const handleExtend = (bookId) => {
+  const handleExtend = async (bookId) => {
     const days = extendDays[bookId] || 7;
-    extenderPlazo(bookId, days);
-    alert(`Plazo extendido por ${days} días`);
+    const success = await extenderPlazo(bookId, days);
+    if (success) {
+      alert(`Plazo extendido por ${days} días`);
+    } else {
+      alert('No se pudo extender el plazo.');
+    }
   };
 
   const handleExtendDaysChange = (bookId, days) => {

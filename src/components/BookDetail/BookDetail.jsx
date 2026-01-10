@@ -35,16 +35,21 @@ const BookDetail = () => {
     );
   }
 
-  const handleRental = () => {
+  const handleRental = async () => {
     if (!isAuthenticated || !user) {
       navigate('/login');
       return;
     }
 
+    let success = false;
     if (book.estado === 'DISPONIBLE') {
-      alquilarLibro(book.id, user.id);
+      success = await alquilarLibro(book.id, user.id);
     } else {
-      devolverLibro(book.id, user.id);
+      success = await devolverLibro(book.id, user.id);
+    }
+
+    if (!success) {
+      alert('Hubo un error al procesar la solicitud con el operador.');
     }
   };
 
