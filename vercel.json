@@ -3,6 +3,10 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://tarea3-unir-prod-production.up.railway.app/:path*"
     }
   ]
 }
